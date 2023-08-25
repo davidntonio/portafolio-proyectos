@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Code Generator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    #color-codes p {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: color 0.3s;
+      
+    }
+
+    #color-codes p:hover {
+      color: #007bff;
+    }
+
+    .copy-btn {
+      border: none;
+      background-color: transparent;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .copy-btn:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Color Code Generator</h1>
+
+    <div id="color-input" class="form-group">
+      <input type="color" id="color" class="form-control form-control-lg" />
+    </div>
+
+    <div id="color-codes">
+      <p contenteditable="true">Hexadecimal: <span id="hex-code"></span> <button class="copy-btn">Copy</button></p>
+      <p contenteditable="true">RGB: <span id="rgb-code"></span> <button class="copy-btn">Copy</button></p>
+      <p contenteditable="true">HSL: <span id="hsl-code"></span> <button class="copy-btn">Copy</button></p>
+    </div>
+  </div>
+
+  <script>
+    // Your JavaScript code remains unchanged
+  </script>
+
+</body>
+</html>
